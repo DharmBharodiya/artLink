@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+@font-face {
+    font-family: MonumentExtended;
+    src: url(MonumentExtended-Black.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+html, body{
+    background: #C1B0F4;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+.card{
+    background: #C1B0F4;
+    outline: 0;
+    border: 0;
+}
+.card-header{
+    border: 0;
+    padding: 0;
+    background: #C1B0F4;
+    /* background-size: 20%; */
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.card-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("pattern3.png");
+    background-size: 30%;
+    opacity: 0.6;
+    z-index: -1;
+}
+.img img{
+    width: 175px;
+    border-radius: 100%;
+    margin: 4em 1em 2em 2em;
+    border: 3px solid #525252;
+    transform: rotate(0deg);
+    cursor: pointer;
+    transition:all .1s;
+    filter: hue-rotate(319deg);
+}
+/* .img img:hover{
+    animation: rotateImg 3s infinite;
+}
+@keyframes rotateImg{
+    to{
+        transform: rotate(360deg);
+    }
+} */
+.card-header .name h3{
+    color: #8779ad;
+    font-family: "MonumentExtended";
+    font-weight: lighter;
+}
+button{
+    cursor: pointer;
+}
+.card-body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3em;
+    position: relative;
+}
+.card-body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("pattern3.png");
+    background-repeat: repeat;
+    background-size: 50%;
+    opacity: 1;
+    z-index: -1;
+}
+.card-body .links .btn-social{
+    box-sizing: border-box;
+    border: 2px solid #8C8C8C;
+    font-size: 20px;
+    background: #FFE395;
+    color: #8C8C8C;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 15px 0;
+    min-width: 360px !important;
+    /* padding: .8em 10em; */
+    padding: .8em 5em;
+    width: 60vw;
+    transition:all .2s ease-in-out;
+
+    position: relative;
+    z-index: 1000;
+
+    box-shadow: 14px 17px 0px -5px #8C8C8C;
+    -webkit-box-shadow: 14px 17px 0px -5px #8C8C8C;
+    -moz-box-shadow: 14px 17px 0px -5px #8C8C8C;
+}
+.card-body .links .btn-social::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 17px;
+    background: #8C8C8C;
+    bottom: -9px;
+    left: 5px;
+    transform: rotate(41deg);
+    z-index: 1000000;
+    opacity: 0;
+}
+.card-body .links  .btn-social:hover{
+    /* color: rgba(0, 0, 0, 0.5); */
+    background: #C1B0F4;
+}
+.card-body .links .pink{
+    background: #F7B9EB;
+    min-width: 360px !important;
+    /* padding: .8em 10.3em; */
+}
+.card-body .links .blue{
+    background: #91DBFF;
+    min-width: 360px !important;
+    /* padding: .8em 10.7em; */
+}
+.card-body .links .green{
+    background: #bbf7b9;
+    min-width: 360px !important;
+    /* padding: .8em 10.7em; */
+}
+.card-body .links .red{
+    background: #f7b7b7;
+    min-width: 360px !important;
+    /* padding: .8em 10.3em; */
+}
+.card-body .links .orange{
+    background: #ffd9b8;
+    min-width: 360px !important;
+    /* padding: .8em 9.8em; */
+}
+.card-body .links .pink_dri{
+    background: #ffb8ee;
+    min-width: 360px !important;
+    /* padding: .8em 10.3em; */
+}
+.artstation-img{
+    width: 19px;
+    filter: hue-rotate(180deg);
+}
+
+.card-footer{
+    outline: none;
+    border: none;
+    background: #C1B0F4;
+}
+.card-footer p{
+    text-align: center;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: .5;
+}
+.fa {
+    color: #8C8C8C;
+    font-weight: bold;
+    font-size: inherit;
+}
+.card-body .links  .btn-social:hover .fa{
+    color: rgba(0, 0, 0, 0.3);
+}
+/* .overlay{
+    /* background: url("pattern.png"); 
+    background: red;
+    background: url("pattern.png");
+    background-position: center;
+    background-size: 50%;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: .5;
+} */
+
+@media screen and (max-width: 550px){
+    .card-body .links .btn-social{
+    font-size: 18px;
+    color: #8C8C8C;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 15px 0;
+    min-width: 75vw !important;
+    /* padding: .8em 8em; */
+   }
+}
+@media screen and (max-width: 420px){
+    body{
+
+    }
+    .card-body .links .btn-social{
+        font-size: 16px;
+        /* padding: .8em 7em; */
+
+        box-shadow: 12px 15px 0px -5px #8C8C8C;
+        -webkit-box-shadow: 12px 15px 0px -5px #8C8C8C;
+        -moz-box-shadow: 12px 15px 0px -5px #8C8C8C;
+    }
+    .artstation-img{
+        width: 15px;
+        filter: hue-rotate(180deg);
+    }
+}
+
+
+
+*::selection{
+    background: rgba(255, 255, 255, .8);
+}

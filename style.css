@@ -41,9 +41,9 @@ html, body{
     z-index: -1;
 }
 .img img{
-    width: 175px;
+    width: 145px;
     border-radius: 100%;
-    margin: 4em 1em 2em 2em;
+    margin: 2em 1em 2em 2em;
     border: 3px solid #525252;
     transform: rotate(0deg);
     cursor: pointer;
@@ -100,7 +100,7 @@ button{
     min-width: 360px !important;
     /* padding: .8em 10em; */
     padding: .8em 5em;
-    width: 60vw;
+    width: 80vw;
     transition:all .2s ease-in-out;
 
     position: relative;

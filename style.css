@@ -4,7 +4,6 @@
     font-family: MonumentExtended;
     src: url(MonumentExtended-Black.ttf);
 }
-
 *{
     box-sizing: border-box;
 }
@@ -44,11 +43,12 @@ html, body{
     width: 145px;
     border-radius: 100%;
     margin: 1.3em 1em .5em 2em;
-    border: 3px solid #525252;
+    /* border: 3px solid #525252; */
+    border: 3px solid rgb(32, 31, 31);
     transform: rotate(0deg);
     cursor: pointer;
     transition:all .1s;
-    filter: hue-rotate(319deg);
+    filter: hue-rotate(704deg);
 }
 /* .img img:hover{
     animation: rotateImg 3s infinite;
@@ -62,9 +62,14 @@ html, body{
     color: #8779ad;
     font-family: "MonumentExtended";
     font-weight: lighter;
+    font-size: 18px;
 }
 button{
     cursor: pointer;
+}
+a{
+    
+    color: rgb(32, 31, 31);
 }
 .card-body{
     text-align: center;
@@ -109,6 +114,9 @@ button{
     box-shadow: 14px 17px 0px -5px #8C8C8C;
     -webkit-box-shadow: 14px 17px 0px -5px #8C8C8C;
     -moz-box-shadow: 14px 17px 0px -5px #8C8C8C;
+    /* box-shadow: 14px 17px 0px -5px rgb(32, 31, 31);
+    -webkit-box-shadow: 14px 17px 0px -5px rgb(32, 31, 31);
+    -moz-box-shadow: 14px 17px 0px -5px rgb(32, 31, 31); */
 }
 .card-body .links .btn-social::before{
     content: '';
@@ -116,6 +124,8 @@ button{
     width: 20px;
     height: 17px;
     background: #8C8C8C;
+    
+    /* background: rgb(32, 31, 31); */
     bottom: -9px;
     left: 5px;
     transform: rotate(41deg);
@@ -174,6 +184,8 @@ button{
 }
 .fa {
     color: #8C8C8C;
+    
+    /* color: rgb(32, 31, 31); */
     font-weight: bold;
     font-size: inherit;
 }

@@ -70,6 +70,7 @@ button{
 a{
     
     color: rgb(32, 31, 31);
+    /* color: rgb(70, 69, 69); */
 }
 .card-body{
     text-align: center;
@@ -95,7 +96,7 @@ a{
 }
 .card-body .links .btn-social{
     box-sizing: border-box;
-    border: 2px solid #8C8C8C;
+    border: 2px solid #777777;
     font-size: 20px;
     background: #FFE395;
     color: #8C8C8C;
@@ -111,12 +112,20 @@ a{
     position: relative;
     z-index: 1000;
 
-    box-shadow: 14px 17px 0px -5px #8C8C8C;
+    filter: saturate(110%);
+
+    /* box-shadow: 14px 17px 0px -5px #8C8C8C;
     -webkit-box-shadow: 14px 17px 0px -5px #8C8C8C;
-    -moz-box-shadow: 14px 17px 0px -5px #8C8C8C;
-    /* box-shadow: 14px 17px 0px -5px rgb(32, 31, 31);
-    -webkit-box-shadow: 14px 17px 0px -5px rgb(32, 31, 31);
-    -moz-box-shadow: 14px 17px 0px -5px rgb(32, 31, 31); */
+    -moz-box-shadow: 14px 17px 0px -5px #8C8C8C; */
+
+
+    box-shadow: 14px 17px 0px -5px #777777;
+    -webkit-box-shadow: 14px 17px 0px -5px #777777;
+    -moz-box-shadow: 14px 17px 0px -5px #777777;
+/* 
+    box-shadow: 14px 17px 0px -5px rgb(70, 69, 69);
+    -webkit-box-shadow: 14px 17px 0px -5px rgb(70, 69, 69);
+    -moz-box-shadow: 14px 17px 0px -5px rgb(70, 69, 69); */
 }
 .card-body .links .btn-social::before{
     content: '';
@@ -131,6 +140,7 @@ a{
     transform: rotate(41deg);
     z-index: 1000000;
     opacity: 0;
+
 }
 .card-body .links  .btn-social:hover{
     /* color: rgba(0, 0, 0, 0.5); */
